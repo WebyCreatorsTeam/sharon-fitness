@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* For Webkit-based browsers (Chrome, Safari and Opera) */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-none {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+body,
+* {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
