@@ -12,7 +12,6 @@ export default function BlobSVG({
       xmlns='http://www.w3.org/2000/svg'
       width={`${width}mm`}
       height={`${height}mm`}
-      
     >
       <path
         fill-rule='evenodd'

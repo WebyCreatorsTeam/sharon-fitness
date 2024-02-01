@@ -8,9 +8,7 @@ import MainDecorLine from './ui/svgs/decor-lines/MainDecorLine';
 
 export default function Home() {
   return (
-    
     <div className='flex h-screen w-fit flex-col'>
-      
       <Logo />
       <SlantedDecorLine />
       <LShapedDecorLine />

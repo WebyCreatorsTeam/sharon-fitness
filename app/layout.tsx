@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <main className='mobile:min-w-screen-mobile desktop:min-w-screen-desktop tablet:min-w-screen-tablet flex h-full min-h-screen flex-col items-center justify-between'>
-          <div className='desktop:h-[1036.68px] desktop:w-[1122px] tablet:w-[1195.54px] tablet:h-[1173px] mobile:w-[834.11px] mobile:h-[770.68px] relative flex flex-col place-content-end items-center'>
+          <div className='relative flex flex-col place-content-end items-center mobile:h-[770.68px] mobile:w-[834.11px] tablet:h-[1173px] tablet:w-[1195.54px] desktop:h-[1036.68px] desktop:w-[1122px]'>
             <Image
               fill
               objectFit='contain'
