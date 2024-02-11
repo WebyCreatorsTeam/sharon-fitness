@@ -1,8 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { inter } from '@/app/ui/fonts';
+
 import Image from 'next/image';
 import BlobSVG from './ui/svgs/BlobSVG';
+import { fredoka } from './ui/fonts';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={fredoka.className}>
         <main className='mobile:min-w-screen-mobile desktop:min-w-screen-desktop tablet:min-w-screen-tablet flex h-full min-h-screen flex-col items-center justify-between'>
           <div className='relative flex flex-col place-content-end items-center mobile:h-[770.68px] mobile:w-[834.11px] tablet:h-[1173px] tablet:w-[1195.54px] desktop:h-[1036.68px] desktop:w-[1122px]'>
             <Image
