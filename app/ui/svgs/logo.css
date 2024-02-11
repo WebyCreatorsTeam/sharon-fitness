@@ -1,0 +1,34 @@
+.str2 {
+  stroke: #320556;
+  stroke-width: 8.47;
+  stroke-miterlimit: 22.9256;
+}
+.str1 {
+  stroke: #df678d;
+  stroke-width: 16.93;
+  stroke-miterlimit: 22.9256;
+}
+.str0 {
+  stroke: black;
+  stroke-width: 8.47;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 22.9256;
+}
+.fil0 {
+  fill: none;
+}
+.fil4 {
+  fill: none;
+  fill-rule: nonzero;
+}
+.fil2 {
+  fill: #320556;
+}
+.fil1 {
+  fill: #df678d;
+}
+.fil3 {
+  fill: #320556;
+  fill-rule: nonzero;
+}
