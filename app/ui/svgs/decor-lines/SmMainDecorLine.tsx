@@ -1,10 +1,9 @@
 import React from 'react';
 
-const MainDecorLine = () => {
+const SmMainDecorLine = () => {
   return (
     <svg
-      className='absolute top-0 -translate-x-1/2 lg:translate-x-0 lg:translate-y-1/4'
-      width={1920}
+      className='absolute bottom-0  block -translate-y-[100px] sm:hidden sm:-translate-y-[70px] md:-translate-y-[50px] lg:-translate-y-1/4'
       viewBox='0 0 1920 241'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
@@ -23,4 +22,4 @@ const MainDecorLine = () => {
   );
 };
 
-export default MainDecorLine;
+export default SmMainDecorLine;
