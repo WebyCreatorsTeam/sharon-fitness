@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <div className='scrollbar-none flex h-full w-full flex-col overflow-y-hidden'>
       <HeroSection />
-      <MapSection>
-        <div>children</div>
-      </MapSection>
+      <MapSection />
     </div>
   );
 }
