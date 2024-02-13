@@ -3,7 +3,7 @@ import React from 'react';
 const SlantedDecorLine = () => {
   return (
     <svg
-      className='absolute bottom-0 left-0 hidden w-[500px] sm:block'
+      className='absolute bottom-0 left-0 hidden w-[500px] md:block'
       viewBox='0 0 846 500'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
