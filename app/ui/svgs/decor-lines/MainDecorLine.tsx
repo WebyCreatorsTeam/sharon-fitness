@@ -3,7 +3,7 @@ import React from 'react';
 const MainDecorLine = () => {
   return (
     <svg
-      className='absolute top-0 -translate-x-1/2 lg:translate-x-0 lg:translate-y-1/4'
+      className='absolute top-0 -translate-x-60 lg:translate-x-0 lg:translate-y-1/4'
       width={1920}
       viewBox='0 0 1920 241'
       fill='none'
