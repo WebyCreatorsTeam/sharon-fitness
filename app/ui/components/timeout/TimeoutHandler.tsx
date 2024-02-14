@@ -45,7 +45,7 @@ export default function TimeoutModal() {
           className='fixed left-1/2 top-1/2 z-50 flex h-fit w-fit -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[60px] bg-timeoutModal-gradient px-2 py-8 shadow-2xl'
         >
           <button
-            className='bg-timesButton-gradient absolute left-6 top-5 rounded-full p-4'
+            className='absolute left-6 top-5 rounded-full bg-timesButton-gradient p-4'
             onClick={handleCloseModal}
           >
             <TimesSVG width='w-5' height='h-5' />
