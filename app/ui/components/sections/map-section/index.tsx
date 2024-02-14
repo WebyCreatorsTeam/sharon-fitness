@@ -10,6 +10,7 @@ import WazeSVG from '@/app/ui/svgs/WazeSVG';
 import WhatsappSVG from '@/app/ui/svgs/WhatsappSVG';
 import AppointmentsSVG from '@/app/ui/svgs/AppointmentsSVG';
 import Link from 'next/link';
+import ContactButtons from '../../ContactButtons';
 
 const MapSection = () => {
   const location = {
@@ -21,17 +22,7 @@ const MapSection = () => {
       <div className='relative flex h-full w-full flex-col items-center pt-60'>
         <MainDecorLine />
         <div className='scrollbar-none flex w-fit flex-col items-center justify-center gap-12 overflow-y-scroll lg:flex-col-reverse lg:items-start lg:pb-9'>
-          <div dir='rtl' className='flex flex-col gap-9 md:hidden'>
-            <Button backgroundColor='bg-appointment-gradient'>
-              <AppointmentsSVG /> לקביעת אימון נסיון
-            </Button>
-            <Button
-              link='https://wa.me/972523100000'
-              backgroundColor='bg-whatsapp-gradient'
-            >
-              <WhatsappSVG /> וואטסאפ
-            </Button>
-          </div>
+          <ContactButtons />
           <MapComp />
           <div
             dir='rtl'

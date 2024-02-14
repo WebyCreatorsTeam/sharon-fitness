@@ -5,22 +5,20 @@ const Button = ({
   children,
   backgroundColor,
   link,
+  modal,
 }: {
   children: React.ReactNode;
   backgroundColor: string;
   link?: string;
+  modal?: boolean;
 }) => {
   if (link) {
     return (
       <button
-        className={` ${backgroundColor}
-       z-50 rounded-full px-5 py-2 text-3xl  font-semibold  text-white`}
+        className={` ${backgroundColor} ${modal ? 'w-full rounded-full px-4 py-4' : 'rounded-full px-5 py-2 text-3xl'}
+    z-40 flex justify-center whitespace-nowrap font-semibold text-white shadow-2xl`}
       >
-        <Link
-          target='_blank'
-          className='flex items-center justify-center gap-3'
-          href={link}
-        >
+        <Link target='_blank' className='flex items-center  gap-3' href={link}>
           {children}
         </Link>
       </button>
@@ -29,8 +27,8 @@ const Button = ({
 
   return (
     <button
-      className={` ${backgroundColor}
-       z-50 flex items-center justify-center gap-3 rounded-full px-5 py-2 text-3xl  font-semibold  text-white`}
+      className={` ${backgroundColor} ${modal ? 'w-full rounded-full px-4 py-4' : 'rounded-full px-5 py-2 text-3xl'}
+    z-40 flex items-center justify-center gap-3 whitespace-nowrap font-semibold text-white`}
     >
       {children}
     </button>
