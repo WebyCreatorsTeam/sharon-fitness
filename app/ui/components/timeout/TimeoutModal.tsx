@@ -21,7 +21,7 @@ export default function TimeoutModal() {
   const { getRemainingTime } = useIdleTimer({
     onIdle,
     onActive,
-    timeout: 3000,
+    timeout: 300000,
     throttle: 500,
   });
 

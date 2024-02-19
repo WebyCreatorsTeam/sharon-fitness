@@ -1,6 +1,6 @@
 import HeroSection from './ui/components/sections/hero-section';
 import MapSection from './ui/components/sections/map-section';
-import TimeoutModal from './ui/components/timeout/TimeoutHandler';
+import TimeoutModal from './ui/components/timeout/TimeoutModal';
 
 export default function Home() {
   return (
