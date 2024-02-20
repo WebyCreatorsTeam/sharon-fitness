@@ -18,7 +18,7 @@ const MapSection = () => {
     lng: 34.75648,
   };
   return (
-    <div className={`background h-svh w-full ${styles.default.background}`}>
+    <div className={`background overflow-x-clip h-svh w-full ${styles.default.background}`}>
       <div className='relative flex h-full w-full flex-col items-center pt-60'>
         <MainDecorLine />
         <div className='scrollbar-none flex w-fit flex-col items-center justify-center gap-12 overflow-y-scroll lg:flex-col-reverse lg:items-start lg:pb-9'>
