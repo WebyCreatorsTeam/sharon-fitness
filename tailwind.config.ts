@@ -19,6 +19,10 @@ const config: Config = {
           'linear-gradient(93.02deg, #DF678D 6.15%, #FB4D84 98.44%)',
         'whatsapp-gradient':
           'linear-gradient(93.02deg, #28CA42 6.15%, #3C7E14 98.44%)',
+        'timesButton-gradient':
+          'linear-gradient(180deg, #DF678D 0%, #FF0957 100%)',
+        'timeoutModal-gradient':
+          'linear-gradient(125.76deg, #FFFFFF -6.1%, #DDDCDC 116.49%)',
       },
       screens: {
         mobile: '375px',

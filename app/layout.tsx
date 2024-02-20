@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { fredoka } from './ui/fonts';
+import TimeoutModal from './ui/components/timeout';
 import type { Viewport } from 'next';
 
 export const metadata: Metadata = {
@@ -30,8 +31,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={fredoka.className}>
-        <main className='mobile:min-w-screen-mobile desktop:min-w-screen-desktop tablet:min-w-screen-tablet flex h-full min-h-screen flex-col items-center justify-between'>
+        <main className='mobile:min-w-screen-mobile desktop:min-w-screen-desktop tablet:min-w-screen-tablet relative flex h-full min-h-screen flex-col items-center justify-between'>
           {children}
+          <TimeoutModal />
         </main>
       </body>
     </html>
