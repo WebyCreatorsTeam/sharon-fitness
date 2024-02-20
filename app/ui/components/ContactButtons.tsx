@@ -9,7 +9,7 @@ const ContactButtons = ({ modal }: { modal?: boolean }) => {
       dir='rtl'
       className={
         modal
-          ? 'flex flex-col items-center gap-7'
+          ? 'flex flex-col items-center gap-7 md:flex-row'
           : `flex flex-col gap-9 md:hidden`
       }
     >
@@ -19,10 +19,12 @@ const ContactButtons = ({ modal }: { modal?: boolean }) => {
       <Button
         modal={modal}
         link='https://wa.me/972523100000'
-        backgroundColor='bg-whatsapp-gradient'
+        backgroundColor='bg-whatsapp-gradient md:rounded-3xl md:w-fit md:px-3 md:py-1'
       >
-        <WhatsappSVG />{' '}
-        <span {...(modal ? { className: 'sm:hidden block' } : {})}>
+        <WhatsappSVG
+          className={modal ? 'h-9 w-9 md:h-[59px] md:w-[59px]' : ''}
+        />{' '}
+        <span {...(modal ? { className: 'md:hidden block' } : {})}>
           וואטסאפ
         </span>
       </Button>

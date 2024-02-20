@@ -21,7 +21,7 @@ export default function TimeoutModal() {
   const { getRemainingTime } = useIdleTimer({
     onIdle,
     onActive,
-    timeout: 300000,
+    timeout: 3000,
     throttle: 500,
   });
 
@@ -42,25 +42,27 @@ export default function TimeoutModal() {
       <div className='absolute z-40 h-full w-full bg-black/25'>
         <dialog
           open
-          className='fixed left-1/2 top-1/2 z-50 flex h-fit w-fit -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[60px] bg-timeoutModal-gradient px-2 py-8 shadow-2xl'
+          className='bg-timeoutModal-gradient md:min-w-2/5 fixed left-1/2 top-1/2 z-50 flex h-fit  w-fit -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[60px] px-2 py-8 shadow-2xl md:px-10 md:py-10 lg:px-20 lg:py-20'
         >
           <button
-            className='absolute left-6 top-5 rounded-full bg-timesButton-gradient p-4'
+            className='bg-timesButton-gradient absolute left-6 top-5 rounded-full p-4'
             onClick={handleCloseModal}
           >
             <TimesSVG width='w-5' height='h-5' />
           </button>
-          <div className='flex flex-col items-center gap-24 text-2xl'>
-            <Image
-              src='/lg-glute-bridge-with-overhead-press.png'
-              sizes='(max-width: 768px) 200px, (max-width: 1200px) 200px, 200px'
-              alt='logo'
-              width={200}
-              height={200}
-            />
+          <div className='flex flex-col items-center gap-24 text-2xl md:gap-12'>
+            <div className='relative h-48 w-48 md:h-96 md:w-96'>
+              <Image
+                fill
+                className='object-contain'
+                src='/lg-glute-bridge-with-overhead-press.png'
+                sizes='(max-width: 768px) 200px, (max-width: 1200px) 200px, 200px'
+                alt='logo'
+              />
+            </div>
             <h1
               dir='rtl'
-              className='whitespace-nowrap font-semibold text-[#DF678D]'
+              className='whitespace-nowrap font-semibold text-[#DF678D] md:text-6xl'
             >
               התעייפתם כבר? 🙃
             </h1>
