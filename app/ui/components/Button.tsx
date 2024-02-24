@@ -16,9 +16,9 @@ const Button = ({
     return (
       <button
         className={` ${backgroundColor} ${modal ? 'w-full rounded-full px-4 py-4' : 'rounded-full px-5 py-2 text-3xl'}
-    z-40 flex justify-center whitespace-nowrap font-semibold text-white shadow-2xl`}
+    z-40  flex justify-center whitespace-nowrap font-semibold text-white drop-shadow-md `}
       >
-        <Link target='_blank' className='flex items-center  gap-3' href={link}>
+        <Link target='_blank' className='flex items-center gap-3' href={link}>
           {children}
         </Link>
       </button>

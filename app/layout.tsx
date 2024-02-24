@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { fredoka } from './ui/fonts';
 import TimeoutModal from './ui/components/timeout';
 import type { Viewport } from 'next';
+import Footer from './ui/components/footer';
 
 export const metadata: Metadata = {
   title: 'Sharon Fitness',
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={fredoka.className}>
         <main className='mobile:min-w-screen-mobile desktop:min-w-screen-desktop tablet:min-w-screen-tablet relative flex h-full min-h-screen flex-col items-center justify-between'>
           {children}
+          <Footer />
           <TimeoutModal />
         </main>
       </body>

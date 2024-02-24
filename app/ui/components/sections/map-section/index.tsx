@@ -13,7 +13,7 @@ const MapSection = () => {
   };
   return (
     <div
-      className={`background h-svh w-full overflow-x-clip ${styles.default.background}`}
+      className={`background h-svh pb-14 w-full overflow-x-clip ${styles.default.background}`}
     >
       <div className='relative flex h-full w-full flex-col items-center pt-60'>
         <MainDecorLine />
