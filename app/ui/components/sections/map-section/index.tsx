@@ -1,7 +1,6 @@
 import MainDecorLine from '@/app/ui/svgs/decor-lines/MainDecorLine';
 import * as styles from './map-section.module.css';
 import React from 'react';
-import SlantedDecorLine from '@/app/ui/svgs/decor-lines/SlantedDecorLine';
 import MapComp from './MapComp';
 import ContactButtons from '../../ContactButtons';
 import NavigationButtons from './NavigationButtons';
@@ -13,7 +12,7 @@ const MapSection = () => {
   };
   return (
     <div
-      className={`background h-svh pb-14 w-full overflow-x-clip ${styles.default.background}`}
+      className={`background h-full w-full overflow-x-clip pb-14 ${styles.default.background}`}
     >
       <div className='relative flex h-full w-full flex-col items-center pt-60'>
         <MainDecorLine />
@@ -22,7 +21,6 @@ const MapSection = () => {
           <MapComp />
           <NavigationButtons location={location} />
         </div>
-        <SlantedDecorLine />
       </div>
     </div>
   );
