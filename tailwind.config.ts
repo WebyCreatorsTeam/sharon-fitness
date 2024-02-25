@@ -24,6 +24,9 @@ const config: Config = {
         'timeoutModal-gradient':
           'linear-gradient(125.76deg, #FFFFFF -6.1%, #DDDCDC 116.49%)',
       },
+      dropShadow: {
+        buttons: '4px 4px 20px 0px #3C7E14',
+      },
       screens: {
         mobile: '375px',
         desktop: '1920px',

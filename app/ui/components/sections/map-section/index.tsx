@@ -1,7 +1,6 @@
 import MainDecorLine from '@/app/ui/svgs/decor-lines/MainDecorLine';
 import * as styles from './map-section.module.css';
 import React from 'react';
-import SlantedDecorLine from '@/app/ui/svgs/decor-lines/SlantedDecorLine';
 import MapComp from './MapComp';
 import ContactButtons from '../../ContactButtons';
 import NavigationButtons from './NavigationButtons';
@@ -22,7 +21,6 @@ const MapSection = () => {
           <MapComp />
           <NavigationButtons location={location} />
         </div>
-        <SlantedDecorLine />
       </div>
     </div>
   );
