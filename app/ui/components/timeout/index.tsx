@@ -40,7 +40,7 @@ export default function TimeoutModal() {
   if (state === 'Idle')
     return (
       <div className='absolute z-40 h-full w-full bg-black/25'>
-        <dialog className='bg-timeoutModal-gradient md:min-w-2/5 fixed left-1/2 top-1/2 z-50 flex h-fit  w-fit -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[60px] px-2 py-8 shadow-2xl md:px-10 md:py-10 lg:px-20 lg:py-20'>
+        <dialog className='md:min-w-2/5 fixed left-1/2 top-1/2 z-50 flex h-fit w-fit  -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[60px] bg-timeoutModal-gradient px-2 py-8 shadow-2xl md:px-10 md:py-10 lg:px-20 lg:py-20'>
           <CloseButton handleCloseModal={handleCloseModal} />
           <div className='flex flex-col items-center gap-24 text-2xl md:gap-12'>
             <LadyWorkingOut />

@@ -8,7 +8,7 @@ const CloseButton = ({
 }) => {
   return (
     <button
-      className='bg-timesButton-gradient absolute left-6 top-5 rounded-full p-4'
+      className='absolute left-6 top-5 rounded-full bg-timesButton-gradient p-4'
       onClick={handleCloseModal}
     >
       <TimesSVG width='w-5' height='h-5' />

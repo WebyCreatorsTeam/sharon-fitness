@@ -1,0 +1,6 @@
+.background {
+  background-image: url('/assets/heroIntroductionBackgroundSvg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
