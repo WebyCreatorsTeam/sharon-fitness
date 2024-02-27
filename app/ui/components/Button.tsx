@@ -6,31 +6,27 @@ const Button = ({
   backgroundColor,
   link,
   modal,
+  onClick,
 }: {
   children: React.ReactNode;
   backgroundColor: string;
   link?: string;
   modal?: boolean;
+  onClick?: () => void;
 }) => {
-  if (link) {
-    return (
-      <button
-        className={` ${backgroundColor} ${modal ? 'w-full rounded-full px-4 py-4' : 'rounded-full px-5 py-2 text-3xl'}
-    z-40  flex justify-center whitespace-nowrap font-semibold text-white drop-shadow-md `}
-      >
+  return (
+    <button
+      onClick={onClick}
+      className={` ${backgroundColor} ${modal ? 'z-[60] w-full rounded-full px-4 py-4' : ' z-40 rounded-full px-5 py-2 text-3xl'}
+      flex justify-center whitespace-nowrap font-semibold text-white drop-shadow-md `}
+    >
+      {link ? (
         <Link target='_blank' className='flex items-center gap-3' href={link}>
           {children}
         </Link>
-      </button>
-    );
-  }
-
-  return (
-    <button
-      className={` ${backgroundColor} ${modal ? 'w-full rounded-full px-4 py-4' : 'rounded-full px-5 py-2 text-3xl'}
-    z-40 flex items-center justify-center gap-3 whitespace-nowrap font-semibold text-white`}
-    >
-      {children}
+      ) : (
+        <>{children}</>
+      )}
     </button>
   );
 };
