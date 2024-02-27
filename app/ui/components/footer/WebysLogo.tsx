@@ -9,7 +9,7 @@ const WebysLogo = () => {
       <div className='relative h-12 w-40'>
         <Link href='https://weby.team/' target='_blank'>
           <Image
-            src='/WebysLogo.png'
+            src='/assets/WebysLogo.png'
             alt='logo'
             fill
             className='object-contain'

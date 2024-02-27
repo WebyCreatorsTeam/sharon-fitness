@@ -12,11 +12,11 @@ const MapSection = () => {
   };
   return (
     <div
-      className={`background h-fit w-full overflow-x-clip ${styles.default.background}`}
+      className={`z-10 h-fit w-full overflow-x-clip ${styles.default.background}`}
     >
-      <div className='relative flex h-full w-full flex-col items-center pt-60'>
+      <div className='relative flex h-full w-full flex-col items-center'>
         <MainDecorLine />
-        <div className='scrollbar-none flex h-fit w-fit flex-col items-center justify-center gap-12 overflow-y-scroll pb-14 lg:flex-col-reverse lg:items-start lg:pb-9'>
+        <div className='scrollbar-none flex h-fit w-fit  flex-col items-center justify-center gap-12 overflow-y-scroll pb-14 pt-48 lg:flex-col-reverse lg:items-start lg:pb-9'>
           <ContactButtons />
           <MapComp />
           <NavigationButtons location={location} />
