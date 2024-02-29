@@ -23,6 +23,7 @@ const config: Config = {
           'linear-gradient(180deg, #DF678D 0%, #FF0957 100%)',
         'timeoutModal-gradient':
           'linear-gradient(125.76deg, #FFFFFF -6.1%, #DDDCDC 116.49%)',
+        'radio-focus': 'linear-gradient(180deg, #704C8C 0%, #6F17B6 100%)',
       },
       dropShadow: {
         buttons: '4px 4px 20px 0px #3C7E14',
