@@ -5,7 +5,6 @@ import TimeoutModal from './ui/components/timeout';
 import type { Viewport } from 'next';
 import Footer from './ui/components/footer';
 import SlantedDecorLine from './ui/svgs/decor-lines/SlantedDecorLine';
-import { handleCreateCalendlyEvent } from '@/lib/calendly/helpers';
 
 export const metadata: Metadata = {
   title: 'Sharon Fitness',
@@ -38,7 +37,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <SlantedDecorLine />
-          <TimeoutModal handleCreateCalendlyEvent={handleCreateCalendlyEvent} />
+          <TimeoutModal />
         </main>
       </body>
     </html>
