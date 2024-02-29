@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import AppointmentsSVG from '../svgs/AppointmentsSVG';
 import WhatsappSVG from '../svgs/WhatsappSVG';
 import Button from './Button';
@@ -8,11 +8,9 @@ import CalendlyModal from './calendly/CalendlyModal';
 const ContactButtons = ({
   modal,
   handleCloseCurrentModal,
-  handleCreateCalendlyEvent,
 }: {
   modal?: boolean;
   handleCloseCurrentModal?: () => void;
-  handleCreateCalendlyEvent(formData: FormData): Promise<void>;
 }) => {
   const [calendlyModalState, setCalendlyModalState] = useState(false);
   const handleOpenCalendlyModal = (modal?: boolean) => () => {
@@ -28,7 +26,6 @@ const ContactButtons = ({
   return (
     <>
       <CalendlyModal
-        handleCreateCalendlyEvent={handleCreateCalendlyEvent}
         modalState={calendlyModalState}
         handleCloseModal={handleCloseCalendlyModal}
       />

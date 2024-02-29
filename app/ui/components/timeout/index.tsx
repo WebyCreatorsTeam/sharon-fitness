@@ -5,11 +5,7 @@ import ContactButtons from '../ContactButtons';
 import LadyWorkingOut from './LadyWorkingOut';
 import Modal from '../modal';
 
-export default function TimeoutModal({
-  handleCreateCalendlyEvent,
-}: {
-  handleCreateCalendlyEvent(formData: FormData): Promise<void>;
-}) {
+export default function TimeoutModal() {
   const [state, setState] = useState<string>('Active');
   const [remaining, setRemaining] = useState<number>(0);
   const onIdle = () => {
@@ -40,25 +36,18 @@ export default function TimeoutModal({
   const handleCloseModal = () => {
     setState('Active');
   };
-  if (state === 'Idle')
     return (
       <>
-        <Modal handleCloseModal={handleCloseModal}>
-            <LadyWorkingOut />
-            <h1
-              dir='rtl'
-              className='whitespace-nowrap font-semibold text-[#DF678D] md:text-6xl'
-            >
-              התעייפתם כבר? 🙃
-            </h1>
-            <ContactButtons
-              handleCreateCalendlyEvent={handleCreateCalendlyEvent}
-              handleCloseCurrentModal={handleCloseModal}
-              modal
-            />
-
+        <Modal modalState={state === 'Idle'} handleCloseModal={handleCloseModal}>
+          <LadyWorkingOut />
+          <h1
+            dir='rtl'
+            className='whitespace-nowrap font-semibold text-[#DF678D] md:text-6xl'
+          >
+            התעייפתם כבר? 🙃
+          </h1>
+          <ContactButtons handleCloseCurrentModal={handleCloseModal} modal />
         </Modal>
       </>
     );
-  return null;
 }

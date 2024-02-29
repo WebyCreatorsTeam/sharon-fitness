@@ -1,38 +1,25 @@
 import React from 'react';
-import { WorkoutTypeEnum } from '@/lib/calendly/types';
-import Input from '../Input';
 import Modal from '../modal';
-import AmountRadio from './AmountRadio';
+import Script from 'next/script';
 
 const CalendlyModal = ({
   modalState,
   handleCloseModal,
-  handleCreateCalendlyEvent,
 }: {
   modalState: boolean;
   handleCloseModal: () => void;
-  handleCreateCalendlyEvent(formData: FormData): Promise<void>;
 }) => {
-  if (!modalState) return null;
   return (
-    <Modal handleCloseModal={handleCloseModal}>
-      <form
-        className='flex flex-col gap-6'
-        dir='rtl'
-        action={handleCreateCalendlyEvent}
-      >
-        <Input title='שם' name='name' placeholder='שם מלא' />
-        <Input title='מספר טלפון' name='phone' placeholder='טלפון' type='tel' />
-        <Input
-          type='select'
-          placeholder={Object.keys(WorkoutTypeEnum)[0]}
-          optionEnum={WorkoutTypeEnum}
-          name='workoutType'
-          title='סוג אימון'
-        />
-        <AmountRadio />
-        <button type='submit'>הזמנ/י אימון</button>
-      </form>
+    <Modal modalState={modalState} calendly handleCloseModal={handleCloseModal}>
+      <Script
+        type='text/javascript'
+        src='https://assets.calendly.com/assets/external/widget.js'
+        async
+      />
+      <div
+        data-url='https://calendly.com/sharonfitness/meet-with-me'
+        className='calendly-inline-widget scroll-none min-h-full min-w-full'
+      ></div>
     </Modal>
   );
 };
