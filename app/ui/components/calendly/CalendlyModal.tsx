@@ -14,8 +14,6 @@ const CalendlyModal = ({
   handleCreateCalendlyEvent(formData: FormData): Promise<void>;
 }) => {
   if (!modalState) return null;
-  console.log(modalState);
-
   return (
     <Modal handleCloseModal={handleCloseModal}>
       <form
