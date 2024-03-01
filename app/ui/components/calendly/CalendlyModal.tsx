@@ -1,8 +1,6 @@
 import React from 'react';
-import { WorkoutTypeEnum } from '@/lib/calendly/types';
-import Input from '../Input';
 import Modal from '../modal';
-import AmountRadio from './AmountRadio';
+import Script from 'next/script';
 
 const CalendlyModal = ({
   modalState,
@@ -11,10 +9,17 @@ const CalendlyModal = ({
   modalState: boolean;
   handleCloseModal: () => void;
 }) => {
-  if (!modalState) return null;
   return (
-    <Modal handleCloseModal={handleCloseModal}>
-      <></>
+    <Modal modalState={modalState} calendly handleCloseModal={handleCloseModal}>
+      <Script
+        type='text/javascript'
+        src='https://assets.calendly.com/assets/external/widget.js'
+        async
+      />
+      <div
+        data-url='https://calendly.com/sharonfitness/meet-with-me'
+        className='calendly-inline-widget scroll-none min-h-full min-w-full'
+      ></div>
     </Modal>
   );
 };

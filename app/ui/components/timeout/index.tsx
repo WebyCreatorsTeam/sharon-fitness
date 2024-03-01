@@ -36,20 +36,18 @@ export default function TimeoutModal() {
   const handleCloseModal = () => {
     setState('Active');
   };
-  if (state === 'Idle')
-    return (
-      <>
-        <Modal handleCloseModal={handleCloseModal}>
-          <LadyWorkingOut />
-          <h1
-            dir='rtl'
-            className='whitespace-nowrap font-semibold text-[#DF678D] md:text-6xl'
-          >
-            התעייפתם כבר? 🙃
-          </h1>
-          <ContactButtons handleCloseCurrentModal={handleCloseModal} modal />
-        </Modal>
-      </>
-    );
-  return null;
+  return (
+    <>
+      <Modal modalState={state === 'Idle'} handleCloseModal={handleCloseModal}>
+        <LadyWorkingOut />
+        <h1
+          dir='rtl'
+          className='whitespace-nowrap font-semibold text-[#DF678D] md:text-6xl'
+        >
+          התעייפתם כבר? 🙃
+        </h1>
+        <ContactButtons handleCloseCurrentModal={handleCloseModal} modal />
+      </Modal>
+    </>
+  );
 }
