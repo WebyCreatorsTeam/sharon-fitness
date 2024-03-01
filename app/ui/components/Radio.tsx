@@ -11,7 +11,7 @@ const Radio = ({ value }: { value: string }) => {
         id={value}
       />
       <label
-        className='peer-checked:bg-radio-focus grow rounded-full bg-stone-400 px-4 py-1'
+        className='grow rounded-full bg-stone-400 px-4 py-1 peer-checked:bg-radio-focus'
         htmlFor={value}
       >
         {value}
