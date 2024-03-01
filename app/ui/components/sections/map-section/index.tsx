@@ -18,7 +18,7 @@ const MapSection = () => {
     >
       <div className='relative flex h-full w-full flex-col items-center'>
         <MainDecorLine />
-        <div className='scrollbar-none flex h-fit w-fit  flex-col items-center justify-center gap-12 overflow-y-scroll pb-14 pt-48 lg:flex-col-reverse lg:items-start lg:pb-9'>
+        <div className='scrollbar-none flex h-fit w-fit flex-col items-center justify-center gap-12 overflow-y-scroll pb-14 pt-48 lg:flex-col-reverse lg:items-start lg:pb-9 2xl:pt-72'>
           <ContactButtons
             handleCreateCalendlyEvent={handleCreateCalendlyEvent}
           />

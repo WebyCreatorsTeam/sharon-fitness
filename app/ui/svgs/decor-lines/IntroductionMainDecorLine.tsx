@@ -4,7 +4,7 @@ const IntroductionMainDecorLine = () => {
   return (
     <>
       <svg
-        className='absolute top-0 w-[1200px] -translate-x-1/4 -translate-y-1/3 lg:translate-x-0 lg:translate-y-1/4 2xl:w-[4000px] 2xl:translate-y-0'
+        className='absolute top-0 w-[1200px] -translate-x-1/4 -translate-y-1/3 md:hidden lg:translate-x-0 lg:translate-y-1/4 2xl:w-[4000px] 2xl:translate-y-0'
         viewBox='0 0 1920 241'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

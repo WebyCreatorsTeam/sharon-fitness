@@ -7,12 +7,12 @@ import CalendlyModal from './calendly/CalendlyModal';
 
 const ContactButtons = ({
   modal,
+  HeroSection,
   handleCloseCurrentModal,
-  handleCreateCalendlyEvent,
 }: {
   modal?: boolean;
+  HeroSection?: boolean;
   handleCloseCurrentModal?: () => void;
-  handleCreateCalendlyEvent(formData: FormData): Promise<void>;
 }) => {
   const [calendlyModalState, setCalendlyModalState] = useState(false);
   const handleOpenCalendlyModal = (modal?: boolean) => () => {
@@ -28,17 +28,18 @@ const ContactButtons = ({
   return (
     <>
       <CalendlyModal
-        handleCreateCalendlyEvent={handleCreateCalendlyEvent}
         modalState={calendlyModalState}
         handleCloseModal={handleCloseCalendlyModal}
       />
       <div
         dir='rtl'
-        className={
-          modal
-            ? 'flex flex-col items-center gap-7 md:flex-row'
-            : `flex flex-col gap-9 md:hidden`
-        }
+        className={`
+        flex
+        ${modal && 'flex-col items-center gap-7 md:flex-row'}
+        ${HeroSection && 'hidden w-fit flex-col items-center  gap-7 md:flex md:flex-row  md:max-lg:p-0'}
+        ${!modal && !HeroSection && 'flex-col gap-9 md:hidden'}
+        
+        `}
       >
         <Button
           onClick={handleOpenCalendlyModal(modal)}

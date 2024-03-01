@@ -44,19 +44,18 @@ export default function TimeoutModal({
     return (
       <>
         <Modal handleCloseModal={handleCloseModal}>
-            <LadyWorkingOut />
-            <h1
-              dir='rtl'
-              className='whitespace-nowrap font-semibold text-[#DF678D] md:text-6xl'
-            >
-              התעייפתם כבר? 🙃
-            </h1>
-            <ContactButtons
-              handleCreateCalendlyEvent={handleCreateCalendlyEvent}
-              handleCloseCurrentModal={handleCloseModal}
-              modal
-            />
-
+          <LadyWorkingOut />
+          <h1
+            dir='rtl'
+            className='whitespace-nowrap font-semibold text-[#DF678D] md:text-6xl'
+          >
+            התעייפתם כבר? 🙃
+          </h1>
+          <ContactButtons
+            handleCreateCalendlyEvent={handleCreateCalendlyEvent}
+            handleCloseCurrentModal={handleCloseModal}
+            modal
+          />
         </Modal>
       </>
     );
