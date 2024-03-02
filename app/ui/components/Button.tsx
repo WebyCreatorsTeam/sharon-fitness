@@ -5,19 +5,19 @@ const Button = ({
   children,
   backgroundColor,
   link,
-  modal,
+  timeoutModalOpen,
   onClick,
 }: {
   children: React.ReactNode;
   backgroundColor: string;
   link?: string;
-  modal?: boolean;
+  timeoutModalOpen?: boolean;
   onClick?: () => void;
 }) => {
   return (
     <button
       onClick={onClick}
-      className={` ${backgroundColor} ${modal ? 'z-[60] w-full rounded-full px-4 py-2' : ' z-40 rounded-full px-5 py-2 text-3xl'}
+      className={` ${backgroundColor} ${timeoutModalOpen ? 'z-[60] w-full rounded-full px-4 py-2' : ' z-40 rounded-full px-5 py-2 text-3xl'}
       flex justify-center whitespace-nowrap font-semibold text-white drop-shadow-md `}
     >
       {link ? (
