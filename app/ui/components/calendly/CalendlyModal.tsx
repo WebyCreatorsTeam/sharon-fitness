@@ -12,7 +12,7 @@ const CalendlyModal = ({
   return (
     // <Modal modalState={modalState} calendly handleCloseCalendlyModal={handleCloseCalendlyModal}>
     <div
-      className={`${!modalState && 'hidden'} fixed left-0 top-0 z-[60] h-full w-full bg-black/25`}
+      className={`${!modalState && 'hidden'} fixed left-0 top-0 z-[100] h-full w-full bg-black/25`}
     >
       <dialog
         className={`md:min-w-2/5 fixed left-1/2 top-1/2 z-[70] flex h-fit w-fit  -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[60px] bg-timeoutModal-gradient  shadow-2xl`}
