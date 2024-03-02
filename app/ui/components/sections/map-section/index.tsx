@@ -5,7 +5,11 @@ import MapComp from './MapComp';
 import ContactButtons from '../../ContactButtons';
 import NavigationButtons from './NavigationButtons';
 
-const MapSection = () => {
+const MapSection = ({
+  handleOpenCalendlyModal,
+}: {
+  handleOpenCalendlyModal: () => void;
+}) => {
   const location = {
     lat: 31.254632,
     lng: 34.75648,
@@ -18,7 +22,7 @@ const MapSection = () => {
       <div className='relative flex h-full w-full flex-col items-center'>
         <MainDecorLine />
         <div className='scrollbar-none flex h-fit w-fit flex-col items-center justify-center gap-12 overflow-y-scroll pb-14 pt-48 lg:flex-col-reverse lg:items-start lg:pb-9 2xl:pt-72'>
-          <ContactButtons />
+          <ContactButtons handleOpenCalendlyModal={handleOpenCalendlyModal} />
           <MapComp />
           <NavigationButtons location={location} />
         </div>

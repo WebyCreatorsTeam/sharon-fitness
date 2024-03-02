@@ -37,7 +37,6 @@ export default function RootLayout({
           {children}
           <Footer />
           <SlantedDecorLine />
-          <TimeoutModal />
         </main>
       </body>
     </html>
