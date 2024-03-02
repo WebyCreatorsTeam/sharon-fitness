@@ -55,7 +55,7 @@ export default function Home() {
     <>
       <div className='scrollbar-none relative flex h-full w-full flex-col -space-y-36 overflow-y-hidden'>
         <HeroSection handleOpenCalendlyModal={handleOpenCalendlyModal} />
-        <MapSection />
+        <MapSection handleOpenCalendlyModal={handleOpenCalendlyModal} />
       </div>
       <Modals
         handleCloseTimeoutModal={handleCloseTimeoutModal}
