@@ -1,10 +1,10 @@
 import React from 'react';
 import heroImageSrc from '../../../../../public/assets/SharonsHero.png';
-import Image from 'next/image';
 
+import Image from 'next/image';
 const HeroImage = () => {
   return (
-    <div className='relative h-[80vh] max-h-[83.3%] sm:h-[906px] tablet:h-[849px] '>
+    <div className='relative h-[80vh] max-h-[83.3%] sm:h-[906px] sm:w-full md:max-lg:hidden'>
       <Image
         src={heroImageSrc}
         alt='hero image'

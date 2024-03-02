@@ -1,13 +1,21 @@
 import React from 'react';
-import * as styles from './hero-section.module.css';
+import './hero-section.css';
 import IntroductionMainDecorLine from '@/app/ui/svgs/decor-lines/IntroductionMainDecorLine';
+import Logo from './Logo';
+import tabletHeroImageSrc from '../../../../../public/assets/SharonsTabletHero.png';
+import Image from 'next/image';
 const HeroIntroduction = () => {
   return (
     <div
-      className={`relative flex h-fit w-full flex-col gap-6 px-6 pb-20 pt-14  text-center ${styles.default.background}`}
+      className={`background relative flex h-fit w-full flex-col items-center gap-6 self-start pb-20 pt-14 text-center md:w-[45%] md:py-0`}
     >
       <IntroductionMainDecorLine />
-      <h1 dir='rtl' className='text-3xl font-bold text-[#DF678D] lg:text-5xl'>
+      <Logo />
+
+      <h1
+        dir='rtl'
+        className='text-3xl font-bold text-[#DF678D] md:text-4xl lg:text-5xl'
+      >
         היי מהממת <span className='text-4xl'>👋🏻</span>
       </h1>
       <div dir='rtl' className={`text-xl font-normal text-[#330657]`}>
