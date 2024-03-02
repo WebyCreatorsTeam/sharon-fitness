@@ -36,7 +36,7 @@ const ContactButtons = ({
         </Button>
         <Button
           timeoutModalOpen={timeoutModalOpen}
-          link='https://wa.me/972523100000'
+          link='https://wa.me/+972542165203'
           backgroundColor='bg-whatsapp-gradient md:rounded-3xl md:w-fit md:px-3 md:py-1'
         >
           <WhatsappSVG
