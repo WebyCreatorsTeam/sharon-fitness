@@ -36,7 +36,7 @@ const ContactButtons = ({
         className={`
         flex
         ${modal && 'flex-col items-center gap-7 md:flex-row'}
-        ${HeroSection && 'hidden w-fit flex-col items-center  gap-7 md:flex md:flex-row  md:max-lg:p-0'}
+        ${HeroSection && 'hidden w-fit flex-col items-center gap-7  md:flex md:flex-row md:max-lg:p-0  lg:pr-20'}
         ${!modal && !HeroSection && 'flex-col gap-9 md:hidden'}
         
         `}
