@@ -32,16 +32,25 @@ const ContactButtons = ({
           timeoutModalOpen={timeoutModalOpen}
           backgroundColor='bg-appointment-gradient'
         >
-          <AppointmentsSVG /> לקביעת אימון נסיון
+          <AppointmentsSVG
+            className={
+              timeoutModalOpen
+                ? 'h-9 w-9 md:h-[59px] md:w-[59px]'
+                : 'md:h-7 md:w-7 '
+            }
+          />{' '}
+          לקביעת אימון נסיון
         </Button>
         <Button
           timeoutModalOpen={timeoutModalOpen}
           link='https://wa.me/+972542165203'
-          backgroundColor='bg-whatsapp-gradient md:rounded-3xl md:w-fit md:px-3 md:py-1'
+          backgroundColor='bg-whatsapp-gradient md:rounded-3xl md:w-fit'
         >
           <WhatsappSVG
             className={
-              timeoutModalOpen ? 'h-9 w-9 md:h-[59px] md:w-[59px]' : ''
+              timeoutModalOpen
+                ? 'h-9 w-9 md:h-[59px] md:w-[59px]'
+                : 'md:h-7 md:w-7 '
             }
           />{' '}
           <span {...(timeoutModalOpen ? { className: 'md:hidden block' } : {})}>
