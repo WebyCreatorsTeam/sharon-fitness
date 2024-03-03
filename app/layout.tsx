@@ -5,6 +5,7 @@ import TimeoutModal from './ui/components/timeout';
 import type { Viewport } from 'next';
 import Footer from './ui/components/footer';
 import SlantedDecorLine from './ui/svgs/decor-lines/SlantedDecorLine';
+import LShapedDecorLine from './ui/svgs/decor-lines/LShapedDecorLine';
 
 export const metadata: Metadata = {
   title: 'Sharon Fitness',
@@ -34,6 +35,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={fredoka.className}>
         <main className='sm:min-w-screen-mobile lg:min-w-screen-desktop md:min-w-screen-tablet relative flex h-full min-h-screen flex-col items-center justify-between'>
+          <LShapedDecorLine />
           {children}
           <Footer />
           <SlantedDecorLine />

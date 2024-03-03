@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AppointmentsSVG = ({className}: {className?: string}) => {
+const AppointmentsSVG = ({ className }: { className?: string }) => {
   return (
     <svg
       className={className}

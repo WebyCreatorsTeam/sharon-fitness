@@ -3,8 +3,7 @@ import React from 'react';
 const LShapedDecorLine = () => {
   return (
     <svg
-      width='537'
-      height='182'
+      className='absolute left-0 top-0 hidden xl:block  xl:h-[91.5px] xl:w-[269.5px] desktop:h-[182px] desktop:w-[537px]'
       viewBox='0 0 537 182'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
