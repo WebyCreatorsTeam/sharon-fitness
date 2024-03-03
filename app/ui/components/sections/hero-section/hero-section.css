@@ -2,7 +2,15 @@
   background-image: url('/assets/heroIntroductionBackgroundSvg.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 17%;
+  background-position-y: 23%;
+}
+@media screen and (min-width: 365px) {
+  .background {
+    background-image: url('/assets/heroIntroductionBackgroundSvgLG.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 11%;
+  }
 }
 @media screen and (min-width: 768px) {
   .background {

@@ -22,7 +22,7 @@ const ContactButtons = ({
         className={`
         flex
         ${timeoutModalOpen && 'flex-col items-center gap-7 md:flex-row'}
-        ${HeroSection && 'hidden w-fit flex-col items-center gap-7  md:flex md:flex-row md:max-lg:p-0  lg:pr-20'}
+        ${HeroSection && 'hidden w-fit flex-col items-center gap-7 md:flex md:flex-row md:gap-3 md:max-lg:p-0 lg:pr-20  xl:pl-10'}
         ${!timeoutModalOpen && !HeroSection && 'flex-col gap-9 md:hidden'}
         
         `}
@@ -32,19 +32,31 @@ const ContactButtons = ({
           timeoutModalOpen={timeoutModalOpen}
           backgroundColor='bg-appointment-gradient'
         >
-          <AppointmentsSVG /> לקביעת אימון נסיון
+          <AppointmentsSVG
+            className={
+              timeoutModalOpen
+                ? 'h-9 w-9 md:h-[59px] md:w-[59px]'
+                : 'md:h-7 md:w-7 '
+            }
+          />{' '}
+          לקביעת אימון נסיון
         </Button>
         <Button
           timeoutModalOpen={timeoutModalOpen}
           link='https://wa.me/+972542165203'
-          backgroundColor='bg-whatsapp-gradient md:rounded-3xl md:w-fit md:px-3 md:py-1'
+          backgroundColor='bg-whatsapp-gradient md:rounded-full md:w-fit'
         >
           <WhatsappSVG
             className={
-              timeoutModalOpen ? 'h-9 w-9 md:h-[59px] md:w-[59px]' : ''
+              timeoutModalOpen
+                ? 'h-9 w-9 md:h-[59px] md:w-[59px]'
+                : 'md:h-7 md:w-7 '
             }
           />{' '}
-          <span {...(timeoutModalOpen ? { className: 'md:hidden block' } : {})}>
+          <span
+            // {...(timeoutModalOpen ? { className: 'md:hidden block' } : {})}
+            className='block md:hidden'
+          >
             וואטסאפ
           </span>
         </Button>
