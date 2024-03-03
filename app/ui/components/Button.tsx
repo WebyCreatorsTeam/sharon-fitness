@@ -17,8 +17,9 @@ const Button = ({
   return (
     <button
       onClick={onClick}
-      className={` ${backgroundColor} ${timeoutModalOpen ? 'z-[60] w-full rounded-full px-4 py-2' : ' z-40 rounded-full px-5 py-2 text-2xl'}
-      flex items-center justify-center gap-3 whitespace-nowrap font-semibold leading-none text-white drop-shadow-md `}
+      className={` ${backgroundColor} ${timeoutModalOpen ? 'z-[60] w-full ' : ' z-40  text-2xl'}
+      flex items-center justify-center gap-3 whitespace-nowrap rounded-full px-4 py-2
+      font-semibold leading-none text-white drop-shadow-md `}
     >
       {link ? (
         <Link

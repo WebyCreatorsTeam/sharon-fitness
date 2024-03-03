@@ -22,7 +22,7 @@ const ContactButtons = ({
         className={`
         flex
         ${timeoutModalOpen && 'flex-col items-center gap-7 md:flex-row'}
-        ${HeroSection && 'hidden w-fit flex-col items-center gap-7  md:flex md:flex-row md:max-lg:p-0  lg:pr-20'}
+        ${HeroSection && 'hidden w-fit flex-col items-center gap-7 md:flex md:flex-row md:gap-3 md:max-lg:p-0 lg:pr-20  xl:pl-10'}
         ${!timeoutModalOpen && !HeroSection && 'flex-col gap-9 md:hidden'}
         
         `}
@@ -44,7 +44,7 @@ const ContactButtons = ({
         <Button
           timeoutModalOpen={timeoutModalOpen}
           link='https://wa.me/+972542165203'
-          backgroundColor='bg-whatsapp-gradient md:rounded-3xl md:w-fit'
+          backgroundColor='bg-whatsapp-gradient md:rounded-full md:w-fit'
         >
           <WhatsappSVG
             className={
@@ -53,7 +53,10 @@ const ContactButtons = ({
                 : 'md:h-7 md:w-7 '
             }
           />{' '}
-          <span {...(timeoutModalOpen ? { className: 'md:hidden block' } : {})}>
+          <span
+            // {...(timeoutModalOpen ? { className: 'md:hidden block' } : {})}
+            className='block md:hidden'
+          >
             וואטסאפ
           </span>
         </Button>
