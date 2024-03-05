@@ -22,7 +22,7 @@ const ContactButtons = ({
         className={`
         flex
         ${timeoutModalOpen && 'flex-col items-center gap-7 md:flex-row'}
-        ${HeroSection && 'hidden w-fit flex-col items-center gap-7 md:flex md:flex-row md:gap-3 md:max-lg:p-0 lg:pr-20  xl:pl-10'}
+        ${HeroSection && 'hidden w-fit flex-col items-center gap-7 md:flex md:flex-row md:gap-3 md:max-lg:p-0 lg:self-start xl:px-10  2xl:px-32'}
         ${!timeoutModalOpen && !HeroSection && 'flex-col gap-9 md:hidden'}
         
         `}
