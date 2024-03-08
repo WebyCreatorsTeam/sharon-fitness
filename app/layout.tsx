@@ -1,7 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { fredoka } from './ui/fonts';
-import TimeoutModal from './ui/components/timeout';
 import type { Viewport } from 'next';
 import Footer from './ui/components/footer';
 import SlantedDecorLine from './ui/svgs/decor-lines/SlantedDecorLine';

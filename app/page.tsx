@@ -26,6 +26,7 @@ export default function Home() {
     setTimeoutModalState('Active');
   };
   const onIdle = () => {
+    handleCloseCalendlyModal();
     setTimeoutModalState('Idle');
   };
 
