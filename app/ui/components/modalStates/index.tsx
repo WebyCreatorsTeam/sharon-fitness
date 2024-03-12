@@ -1,6 +1,6 @@
 import React from 'react';
 import TimeoutModal from '../timeout';
-import CalendlyModal from '../calendly/CalendlyModal';
+import CalendlyModal from '../calendly';
 
 function Modals({
   handleCloseTimeoutModal,
