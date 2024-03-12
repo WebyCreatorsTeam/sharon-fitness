@@ -3,11 +3,11 @@ import Button from '../../Button';
 import GoogleMapsSVG from '@/app/ui/svgs/GoogleMapsSVG';
 import WazeSVG from '@/app/ui/svgs/WazeSVG';
 
-const NavigationButtons = ({
-  location,
-}: {
-  location: { lat: number; lng: number };
-}) => {
+const NavigationButtons = () => {
+  const location = {
+    lat: 31.254632,
+    lng: 34.75648,
+  };
   return (
     <div
       dir='rtl'

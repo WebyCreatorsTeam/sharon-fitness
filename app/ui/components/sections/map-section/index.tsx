@@ -10,11 +10,6 @@ const MapSection = ({
 }: {
   handleOpenCalendlyModal: () => void;
 }) => {
-  const location = {
-    lat: 31.254632,
-    lng: 34.75648,
-  };
-
   return (
     <div
       className={`z-10 h-fit w-full overflow-x-clip ${styles.default.background}`}
@@ -24,7 +19,7 @@ const MapSection = ({
         <div className='scrollbar-none flex h-fit w-fit flex-col items-center justify-center gap-12 overflow-y-scroll pb-14 pt-48 lg:flex-col-reverse lg:items-start lg:pb-9 2xl:pt-72'>
           <ContactButtons handleOpenCalendlyModal={handleOpenCalendlyModal} />
           <MapComp />
-          <NavigationButtons location={location} />
+          <NavigationButtons />
         </div>
       </div>
     </div>

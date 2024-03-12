@@ -38,6 +38,7 @@ export default function Home() {
   const { getRemainingTime } = useIdleTimer({
     onIdle,
     onActive,
+    // 5 minutes in milliseconds
     timeout: 300000,
     throttle: 500,
   });
