@@ -43,7 +43,7 @@ const ContactButtons = ({
           לקביעת אימון נסיון
         </Button>
         <Button
-        description='contact through whatsapp'
+          description='contact through whatsapp'
           timeoutModalOpen={timeoutModalOpen}
           link='https://wa.me/+972542165203'
           backgroundColor='bg-whatsapp-gradient md:rounded-full md:w-fit'

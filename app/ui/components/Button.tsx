@@ -18,7 +18,7 @@ const Button = ({
 }) => {
   return (
     <button
-    aria-description={`${description} button`}
+      aria-description={`${description} button`}
       onClick={onClick}
       className={` ${backgroundColor} ${timeoutModalOpen ? 'z-[60] w-full ' : ' z-40  text-2xl'}
       flex items-center justify-center gap-3 whitespace-nowrap rounded-full px-4 py-2
