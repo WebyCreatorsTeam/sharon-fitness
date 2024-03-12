@@ -14,12 +14,14 @@ const NavigationButtons = () => {
       className='flex w-full flex-col gap-9 md:flex-row md:justify-between lg:flex-row-reverse lg:justify-start'
     >
       <Button
+        description='open google maps'
         link={`https://www.google.com/maps/place/${location.lat},${location.lng}/@${location.lat},${location.lng},15z`}
         backgroundColor='bg-google-maps-gradient'
       >
         <GoogleMapsSVG /> פתח בגוגל מפות
       </Button>
       <Button
+        description='open waze'
         link={`https://waze.com/ul?ll=${location.lat},${location.lng}&navigate=yes&zoom=17`}
         backgroundColor='bg-waze-gradient'
       >

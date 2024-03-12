@@ -8,6 +8,7 @@ const CloseButton = ({
 }) => {
   return (
     <button
+      aria-description='close modal button'
       className='absolute right-6 top-5 z-[100] rounded-full bg-timesButton-gradient p-4'
       onClick={handleCloseModal}
     >
