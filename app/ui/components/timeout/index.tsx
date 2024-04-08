@@ -20,7 +20,7 @@ export default function TimeoutModal({
       {/* modal */}
       <dialog
         onMouseDown={(e) => e.stopPropagation()}
-        className={`fixed left-1/2 top-1/2 z-[70] flex h-fit max-h-[90vh] w-fit max-w-[90vw] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[60px] bg-timeoutModal-gradient  px-6 py-14 shadow-2xl md:px-10 md:py-10 lg:px-20 lg:py-20`}
+        className={`fixed left-1/2 top-1/2 z-[70] flex h-fit max-h-[90vh] w-fit max-w-[90vw] -translate-x-1/2 -translate-y-1/2 items-center justify-center overflow-y-scroll rounded-[60px] bg-timeoutModal-gradient  px-6 py-14 shadow-2xl md:px-10 md:py-10 lg:px-20 lg:py-20`}
       >
         <CloseButton handleCloseModal={handleCloseTimeoutModal} />
         <div
